@@ -8,11 +8,15 @@ import SwiftUI
 
 struct LighterScreen: View {
     let okayQuestions = [
-        
+            "Pass the lighter to whoever you think tells lies most often.",
+           "Pass the lighter to whoever you think eats the most sweets.",
+           "Pass the lighter to whoever you think sleeps the most."
     ]
     
     let extremeQuestions = [
-            
+            "Pass the lighter to whoever you think has flirted with more than one friend.",
+           "Pass the lighter to whoever you think has done the craziest thing in their life.",
+           "Pass the lighter to whoever you think would do the most extreme thing without hesitation."
     ]
     
     @State private var currentQuestionIndex = 0
@@ -33,7 +37,7 @@ struct LighterScreen: View {
             VStack {
                 Text("Lighter Game")
                     .font(.system(size: 28))
-                    .foregroundColor(.pink)
+                    .foregroundColor(.purple)
                     .multilineTextAlignment(.center)
                     .padding(.top, 50)
                     .shadow(color: .white.opacity(0.7), radius: 11)
@@ -44,7 +48,7 @@ struct LighterScreen: View {
                     }) {
                         Text("Start Game")
                             .font(.title2)
-                            .foregroundColor(.orange)
+                            .foregroundColor(.pink)
                             .padding()
                             
                     }

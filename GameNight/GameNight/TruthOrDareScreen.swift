@@ -9,19 +9,27 @@ import SwiftUI
 
 struct TruthOrDareScreen: View {
     let okayTruthQuestions = [
-        
+            "Who do you think tells the funniest jokes?",
+          "Who do you think has the weirdest habit?",
+          "Who do you think has the nicest smile?"
     ]
     
     let okayDareQuestions = [
-        
+            "Do 10 jumping jacks.",
+           "Sing a line from your favorite song.",
+           "Post a silly selfie in the group chat."
     ]
     
     let extremeTruthQuestions = [
-        
+            "Who do you think has the wildest love life?",
+           "Who do you think has done the most rebellious thing?",
+           "Who do you think would break the rules first in a game?"
     ]
     
     let extremeDareQuestions = [
-        
+            "Eat something very spicy.",
+           "Call someone and confess a funny secret.",
+           "Let someone draw on your face with a marker."
 
     ]
     
@@ -44,7 +52,7 @@ struct TruthOrDareScreen: View {
             VStack {
                 Text("Truth or Dare")
                     .font(.system(size: 28))
-                    .foregroundColor(.pink)
+                    .foregroundColor(.purple)
                     .multilineTextAlignment(.center)
                     .padding(.top, 50)
                     .shadow(color: .white.opacity(0.7), radius: 11)
@@ -55,7 +63,7 @@ struct TruthOrDareScreen: View {
                     }) {
                         Text("Start Game")
                             .font(.title2)
-                            .foregroundColor(.orange)
+                            .foregroundColor(.pink)
                             .padding()
                     }
                 } else if isExtremeSelected == nil {

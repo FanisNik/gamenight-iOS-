@@ -9,12 +9,16 @@ import SwiftUI
 
 struct NeverHaveIEverScreen: View {
     @State private var okayQuestions: [String] = [
-                
+            "Never have I ever skipped school.",
+           "Never have I ever eaten someone else's food without asking.",
+           "Never have I ever stayed up all night watching a series."
 
     ]
     
     @State private var extremeQuestions: [String] = [
-            
+            "Never have I ever lied about my age.",
+           "Never have I ever flirted with someone I shouldn’t have.",
+           "Never have I ever done something I regret the next day."
     ]
     
     @State private var currentQuestionIndex = 0
@@ -35,7 +39,7 @@ struct NeverHaveIEverScreen: View {
             VStack {
                 Text("Never Have I Ever Game")
                     .font(.system(size: 28))
-                    .foregroundColor(.pink)
+                    .foregroundColor(.purple)
                     .multilineTextAlignment(.center)
                     .padding(.top, 50)
                     .shadow(color: .white.opacity(0.7), radius: 11)
@@ -46,7 +50,7 @@ struct NeverHaveIEverScreen: View {
                     }) {
                         Text("Start Game")
                             .font(.title2)
-                            .foregroundColor(.orange)
+                            .foregroundColor(.pink)
                             .padding()
                             
                     }

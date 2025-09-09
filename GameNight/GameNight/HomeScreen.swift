@@ -20,7 +20,7 @@ struct HomeScreen: View {
             VStack {
                 Text("Choose Your Game")
                     .font(.largeTitle)
-                    .foregroundColor(Color.pink)
+                    .foregroundColor(Color.purple)
                     .shadow(color: Color.white.opacity(0.7), radius: 11)
 
                 VStack(spacing: 10) {
@@ -29,7 +29,7 @@ struct HomeScreen: View {
                         Text("Lighter")
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .foregroundColor(.orange)
+                            .foregroundColor(.pink)
                         
                     }
 
@@ -37,7 +37,7 @@ struct HomeScreen: View {
                         Text("Truth or Dare")
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .foregroundColor(.orange)
+                            .foregroundColor(.pink)
                             
                     }
 
@@ -45,13 +45,18 @@ struct HomeScreen: View {
                         Text("Never Have I Ever")
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .foregroundColor(.orange)
+                            .foregroundColor(.pink)
                             
                     }
                 }
                 .padding(.horizontal, 40)
             }
         }
+    }
+}
+struct HomeScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeScreen()
     }
 }
 
